@@ -15,3 +15,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
         zoom: 1.04
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener('scroll', () => {
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        const windowHeight = window.innerHeight;
+        timelineItems.forEach(item => {
+            const itemPosition = item.getBoundingClientRect().top;
+            if(itemPosition < windowHeight - 50) {
+                item.style.visibility = 'visible';
+                item.style.opacity = '1';
+            }
+        });
+    });
+});
+
