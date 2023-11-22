@@ -21,11 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const windowHeight = window.innerHeight;
         timelineItems.forEach(item => {
             const itemPosition = item.getBoundingClientRect().top;
-            if(itemPosition < windowHeight - 50) {
-                item.style.visibility = 'visible';
-                item.style.opacity = '1';
+            if(itemPosition < windowHeight - 200) {
+                item.classList.add('slide-in');
             }
         });
     });
 });
-

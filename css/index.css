@@ -79,6 +79,18 @@ h3 {
   text-align: left;
   padding-left: 50px;
 }
+.timeline-item.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+.timeline-item.left.slide-in {
+  transform: translateX(-110%);
+}
+.timeline-item.right.slide-in {
+  transform: translateX(10%);
+}
 @media (max-width: 768px) {
   h2 {
     font-size: 25px !important;
@@ -100,6 +112,7 @@ h3 {
   position: relative;
   width: 65%;
   margin: 40px auto;
+  margin-top: 50px;
 }
 .timeline-line {
   position: absolute;
