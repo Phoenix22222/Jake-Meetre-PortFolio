@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     VANTA.WAVES({
-        el: "#vanta-bg",
+        el: ".vanta-bg",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
