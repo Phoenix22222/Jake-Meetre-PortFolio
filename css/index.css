@@ -81,6 +81,9 @@ h3 {
   padding-left: 50px;
 }
 @media (max-width: 768px) {
+  h2 {
+    font-size: 25px !important;
+  }
   .info-card {
       flex-direction: column;
       width: 80%;
