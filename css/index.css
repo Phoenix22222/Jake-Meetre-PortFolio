@@ -52,4 +52,13 @@ h1,h2 {
   width: 100vw;
   padding: 0px;
 }
+.vanta-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+}
 
