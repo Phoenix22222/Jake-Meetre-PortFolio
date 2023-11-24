@@ -145,23 +145,46 @@ h3 {
   background: #f9f9f9;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
-.icon-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-319px, 98px);
+.circle {
   width: 50px;
   height: 50px;
-  background-color: #727272;
   border-radius: 50%;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
-.icon-image {
-  max-width: 60%;
+.timeline-item.left .circle {
+  position: absolute;
+  right: -77px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.timeline-item.right .circle {
+  position: absolute;
+  left: -72px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.circle img {
+  width: 70%;
   height: auto;
 }
-.circle {
-  position: relative;
+.timeline::before, .timeline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 50px;
+  pointer-events: none;
+}
+.timeline::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+.timeline::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
 }
