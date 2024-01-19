@@ -99,3 +99,31 @@ body {
     background-color: rgb(58, 58, 58);
     color: white;
 }
+@media (max-width: 768px) {
+  .resume-download {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    margin-left: 25px;
+    padding-bottom: 300px;
+}
+.resume-text {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    max-width: 550px;
+}
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    font-size: 27px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 15px;
+}
+}
