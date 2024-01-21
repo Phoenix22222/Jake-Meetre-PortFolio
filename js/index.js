@@ -27,3 +27,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+document.addEventListener("scroll", function() {
+    const timelineElements = document.querySelectorAll(".timeline-content");
+    for (const element of timelineElements) {
+        const position = element.getBoundingClientRect().top + element.offsetHeight / 2;
+        const screenPosition = window.innerHeight;
+        if (position < screenPosition) {
+            element.style.animation = `fadeInUp 2s ease forwards`;
+        }
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    var flipCard = document.querySelector('.flip-card');
+    var observer = new IntersectionObserver(function(entries) {
+      if(entries[0].isIntersecting === true) {
+        flipCard.classList.add('show');
+      }
+    }, { threshold: [0.5] }); // Adjust threshold as needed
+  
+    observer.observe(document.querySelector('.flip-card'));
+  });
+  
