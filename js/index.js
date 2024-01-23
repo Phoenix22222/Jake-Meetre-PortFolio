@@ -43,8 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if(entries[0].isIntersecting === true) {
         flipCard.classList.add('show');
       }
-    }, { threshold: [0.5] }); // Adjust threshold as needed
-  
+    }, { threshold: [0.5] });
     observer.observe(document.querySelector('.flip-card'));
   });
   
