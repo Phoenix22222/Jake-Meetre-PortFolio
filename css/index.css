@@ -109,7 +109,27 @@ h3 {
     background: #fff;
     border-radius: 15px;
 }
-  
+.toresume {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: rgb(58, 58, 58); 
+    text-decoration: none;
+    font-size: 27px;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 15px;
+    margin-left: 43%;
+    margin-right: 50%;
+}
+.toresume:hover {
+    background-color: rgb(58, 58, 58); 
+}
+.toresume:hover {
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
 @media (max-width: 1500px) {
     .info-card {
         flex-direction: column;
@@ -128,6 +148,9 @@ h3 {
         padding-left: 0;
         margin-top: 15px;
     }
+    .toresume {
+        margin-left: 43.5%;
+      }
   }
 @media (max-width: 768px) {
   .info-card {
@@ -165,6 +188,10 @@ h3 {
     top: 12%;
     right: -44%; 
     width: 39%;
+  }
+  .toresume {
+    margin-left: 35%;
+    margin-right: 0%;
   }
 }
 body {
@@ -221,27 +248,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   0%   { transform:translate(0,-20px); opacity: 0;  }
   50%  { opacity: 1;  }
   100% { transform:translate(0,20px); opacity: 0; }
-}
-.toresume {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: transparent;
-    color: rgb(58, 58, 58); 
-    text-decoration: none;
-    font-size: 27px;
-    border: 2px solid rgb(58, 58, 58);
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 15px;
-    margin-left: 46%;
-    margin-right: 50%;
-}
-.toresume:hover {
-    background-color: rgb(58, 58, 58); 
-}
-.toresume:hover {
-    background-color: rgb(58, 58, 58);
-    color: white;
 }
 .fade-in {
     opacity: 0;
