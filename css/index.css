@@ -150,7 +150,11 @@ h3 {
     }
     .toresume {
         margin-left: 43.5%;
+        margin-right: 0%;;
       }
+  }
+  .flip-card .info-card {
+    width: 62%;
   }
 @media (max-width: 768px) {
   .info-card {
@@ -160,7 +164,8 @@ h3 {
       width: 85%;
   }
   .flip-card .info-card {
-    left: -40px;
+    left: -47px;
+    width: 62%;
   }
   .me {
       width: 100%;
