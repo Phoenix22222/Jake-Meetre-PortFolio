@@ -153,9 +153,6 @@ h3 {
         margin-right: 0%;;
       }
   }
-  .flip-card .info-card {
-    width: 62%;
-  }
 @media (max-width: 768px) {
   .info-card {
       flex-direction: column;
